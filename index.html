@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .profile-section {
+            margin-bottom: 40px;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 50px;
+            color: white;
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .profile-title {
+            font-size: 14px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .links-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .profile-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .profile-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .profile-link.secondary {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #667eea;
+        }
+
+        .profile-link.secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .link-icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .profile-name {
+                font-size: 24px;
+            }
+
+            .profile-link {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-avatar">👤</div>
+            <h1 class="profile-name">Your Name</h1>
+            <p class="profile-title">Your Title / Profession</p>
+            <p class="profile-bio">Add your bio or short description here. Share what you do and what you're passionate about.</p>
+        </div>
+
+        <!-- Main Profile Links -->
+        <div class="links-section">
+            <a href="https://your-portfolio.com" class="profile-link">
+                <span class="link-icon">🌐</span>
+                <span>Portfolio Website</span>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="profile-link">
+                <span class="link-icon">💼</span>
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/yourprofile" class="profile-link">
+                <span class="link-icon">💻</span>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:your.email@example.com" class="profile-link secondary">
+                <span class="link-icon">✉️</span>
+                <span>Send Email</span>
+            </a>
+        </div>
+
+        <!-- Social Links Footer -->
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" class="social-icon" title="Twitter">𝕏</a>
+            <a href="https://instagram.com/yourprofile" class="social-icon" title="Instagram">📷</a>
+            <a href="https://youtube.com/@yourprofile" class="social-icon" title="YouTube">▶️</a>
+            <a href="https://tiktok.com/@yourprofile" class="social-icon" title="TikTok">♪</a>
+        </div>
+    </div>
+</body>
+</html>
